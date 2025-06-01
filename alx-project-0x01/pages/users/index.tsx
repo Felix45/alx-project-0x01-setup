@@ -2,10 +2,11 @@ import React, { useState } from "react"
 import UserCard from "@/components/common/UserCard"
 import Header from "@/components/layout/Header"
 import UserModal from "@/components/common/UserModal"
-import { UserProps, UserData } from "@/interfaces"
+import { UserProps } from "@/interfaces"
+import { UserData } from "@/interfaces"
 import Footer from "@/components/layout/Footer"
 
-const Users: React.FC<UserProps> = ({ posts }) => {
+const Users: React.FC<UserProps[]> = ({ posts }) => {
     const [isModalOpen, setModalOpen] = useState(false);
     const [user, setUser] = useState<UserData | null>(null);
 
