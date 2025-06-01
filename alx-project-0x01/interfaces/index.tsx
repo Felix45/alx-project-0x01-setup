@@ -5,6 +5,11 @@ export interface PostProps {
   body: string;
 }
 
+export interface ButtonProps {
+    title: string;
+    styles: string;
+}
+
 export interface PostData {
   userId: number;
   id?: number;
