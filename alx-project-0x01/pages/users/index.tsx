@@ -24,7 +24,7 @@ const Users: React.FC<UserProps[]> = ({ posts }) => {
                 </div>
                 <div className="container mx-auto grid grid-cols-4 gap-2 ">
                     {
-                        posts?.map(({ id, name, email, phone, website, address, company }: UserProps, key: number) => (
+                        posts.map(({ id, name, email, phone, website, address, company }: UserProps, key: number) => (
                             <UserCard name={name} email={email} website={website} phone={phone} address={address} company={company} id={id} key={id} />
                         ))
                     }

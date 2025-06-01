@@ -30,14 +30,11 @@ export interface PostModalProps {
   onSubmit: (post: PostData) => void;
 }
 
-export interface UserModalProps {
-    onClose: () => void;
-    onSubmit: (post: UserData) => void;
-}
 
 export interface UserProps {
   id: number;
   name: string;
+  username: string;
   email: string;
   address: {
     street: string;
@@ -56,4 +53,9 @@ export interface UserProps {
     catchPhrase: string;
     bs: string;
   };
+}
+
+export interface UserModalProps {
+    onClose: () => void;
+    onSubmit: (post: UserProps) => void;
 }
